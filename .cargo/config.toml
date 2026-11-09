@@ -1,0 +1,6 @@
+[build]
+# One static C runtime for Rust and the C++ dependencies (CTranslate2, SentencePiece).
+rustflags = ["-C", "target-feature=+crt-static"]
+
+[env]
+CMAKE_MSVC_RUNTIME_LIBRARY = "MultiThreaded"

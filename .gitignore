@@ -1,0 +1,14 @@
+# build output
+/target
+/target-*/
+
+# downloaded components and local tooling (models, GPU server, venv, libclang)
+/models/
+/tools/
+
+# test audio and local binaries (the exe is published as a GitHub release, not committed)
+*.wav
+/rustlate.exe
+
+# local settings
+settings.toml
